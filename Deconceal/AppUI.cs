@@ -6,13 +6,16 @@ namespace Deconceal
 {
     public class AppContext : ApplicationContext
     {
+        ContextMenu menu;
         NotifyIcon notifyIcon;
+        Icon icon;
 
         public AppContext()
         {
-            ContextMenu menu = new ContextMenu(new MenuItem[] { new MenuItem("Exit", (sender, e) => { Program.Exit(); }) });
+            menu = new ContextMenu(new MenuItem[] { new MenuItem("Exit", (sender, e) => { Program.Exit(); }) });
 
-            Icon icon = new Icon(Properties.Resources.ProgramIcon, SystemInformation.SmallIconSize);
+            icon = new Icon(Properties.Resources.ProgramIcon, SystemInformation.SmallIconSize);
+            
             notifyIcon = new NotifyIcon()
             {
                 Visible = true,
@@ -22,9 +25,13 @@ namespace Deconceal
             };
         }
 
-        ~AppContext()
+        protected override void Dispose(bool disposing)
         {
             notifyIcon.Dispose();
+            icon.Dispose();
+            menu.Dispose();
+
+            base.Dispose(disposing);
         }
 
         public static void Run()
