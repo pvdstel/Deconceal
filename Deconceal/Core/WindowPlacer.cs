@@ -12,8 +12,6 @@ namespace Deconceal.Core
     {
         public void PlaceWindow(IntPtr handle)
         {
-            var sw = new System.Diagnostics.Stopwatch();
-            sw.Start();
             var windows = OpenWindows.GetOpenWindowsInOrder();
             Window targetWindow = windows.Find(w => w.Handle == handle);
             if (targetWindow == null)
@@ -45,8 +43,6 @@ namespace Deconceal.Core
             }
 
             targetWindow.MoveTo(bestPoint);
-            sw.Stop();
-            Console.WriteLine(sw.ElapsedMilliseconds);
         }
 
         private Dictionary<Monitor, IEnumerable<Point>> CreateSearchPoints(Window targetWindow)
