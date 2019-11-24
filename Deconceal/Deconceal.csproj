@@ -6,7 +6,7 @@
     <ApplicationIcon>Resources\icon.ico</ApplicationIcon>
     <StartupObject />
     <ApplicationManifest>app.manifest</ApplicationManifest>
-    <Version>0.1.1</Version>
+    <Version>0.2.0</Version>
     <Authors>pvdstel</Authors>
   </PropertyGroup>
 
