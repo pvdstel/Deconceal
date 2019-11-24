@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29123.88
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deconceal", "Deconceal\Deconceal.csproj", "{8948C003-0052-4EBD-854E-C8A4339E820A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deconceal", "Deconceal\Deconceal.csproj", "{26D38C6E-EB68-4255-8FB5-C3021CD8A0FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8948C003-0052-4EBD-854E-C8A4339E820A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8948C003-0052-4EBD-854E-C8A4339E820A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8948C003-0052-4EBD-854E-C8A4339E820A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8948C003-0052-4EBD-854E-C8A4339E820A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26D38C6E-EB68-4255-8FB5-C3021CD8A0FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26D38C6E-EB68-4255-8FB5-C3021CD8A0FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26D38C6E-EB68-4255-8FB5-C3021CD8A0FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26D38C6E-EB68-4255-8FB5-C3021CD8A0FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
