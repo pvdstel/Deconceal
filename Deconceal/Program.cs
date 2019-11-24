@@ -1,6 +1,7 @@
 ﻿using Deconceal.Core;
 using System.Threading.Tasks;
 using System.Windows.Automation;
+using System.Windows.Forms;
 
 namespace Deconceal
 {
@@ -18,10 +19,18 @@ namespace Deconceal
                 TreeScope.Children,
                 handler.OnWindowOpened);
 
+            AppContext.Run();
+
             await exitTask.Task;
 
             Automation.RemoveAllEventHandlers();
         }
 
+        public static Task ExitTask => exitTask.Task;
+
+        public static void Exit()
+        {
+            exitTask.TrySetResult(null);
+        }
     }
 }
