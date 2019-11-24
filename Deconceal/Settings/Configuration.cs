@@ -17,7 +17,7 @@ namespace Deconceal.Settings
             SpanDisplays = false,
             SearchDepth = 8,
             PriorityPenalty = 1.25,
-            ResizeBorder = new Rectangle(7, 0, 7, 7),
+            ResizeBorder = new Rectangle(0, 0, 0, 0),
         };
 
         /// <summary>
