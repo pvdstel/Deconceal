@@ -62,7 +62,7 @@ namespace Deconceal.Native
 
 
         [DllImport("user32.dll")]
-        public static extern IntPtr MonitorFromRect(RECT lprc, MonitorDefaultingFlags dwFlags);
+        public static extern IntPtr MonitorFromRect([In] ref RECT lprc, MonitorDefaultingFlags dwFlags);
 
         [DllImport("user32.dll", CharSet = CharSet.Auto)]
         public static extern bool GetMonitorInfo(IntPtr hMonitor, ref MonitorInfoEx lpmi);

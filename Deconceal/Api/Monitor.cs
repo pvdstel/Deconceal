@@ -31,7 +31,8 @@ namespace Deconceal.Api
 
         public static Monitor GetMonitorFromRect(Rectangle rect)
         {
-            IntPtr monitorHandle = Methods.MonitorFromRect(rect, MonitorDefaultingFlags.MONITOR_DEFAULTTONEAREST);
+            RECT nativeRect = rect;
+            IntPtr monitorHandle = Methods.MonitorFromRect(ref nativeRect, MonitorDefaultingFlags.MONITOR_DEFAULTTONEAREST);
             return FromHandle(monitorHandle);
         }
 
